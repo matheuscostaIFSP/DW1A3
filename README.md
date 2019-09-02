@@ -1,2 +1,2 @@
 # breakmiudo
-Repositorio do Break Miúdo
+Repositorio do site do Break Miúdo
