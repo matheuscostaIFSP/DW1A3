@@ -11,7 +11,7 @@ h1 {
 }
 
 h2 {
-	font-family: "Arial";
+	font-family: "Roboto";
 	background-color:#3C1D3D;
 	text-align: center;
 	color: #F2FFFC;
@@ -56,3 +56,6 @@ div {
 	
 }
 
+nav {
+	text-transform: lowercase;	
+}
