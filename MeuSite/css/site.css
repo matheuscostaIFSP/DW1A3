@@ -11,7 +11,7 @@ h1 {
 }
 
 h2 {
-	font-family: "Roboto";
+	font-family: 'Roboto', sans-serif;
 	background-color:#3C1D3D;
 	text-align: center;
 	color: #F2FFFC;
