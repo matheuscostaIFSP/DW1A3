@@ -59,3 +59,7 @@ div {
 nav {
 	text-transform: lowercase;	
 }
+
+.icones-sociais a{
+	display: inline-block;
+}
