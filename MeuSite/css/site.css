@@ -1,3 +1,28 @@
+header{
+	grid-area: hd;
+}
+
+nav{
+	grid-area: nv;
+}
+
+main{
+	grid-area: main;
+}
+
+footer{
+	grid-area: ft;
+}
+
+.grid-container{
+	display: grid;
+	grid-template-areas: "hd hd"
+						"main nv"
+						"ft ft";
+	grid-template-rows: 30% 60% 10%;
+	grid-template-columns: 80% 20%;
+}
+
 h1 {
 	background-color:#851944;
 	border-bottom: 10px solid #000000;
@@ -61,5 +86,20 @@ nav {
 }
 
 .icones-sociais a{
+	width: 40px;
+	height: 40px;
 	display: inline-block;
+	text-indent: -99999px;
+}
+
+.icones-sociais .github a {
+	background-image: url("Imagens/github.png");
+}
+
+.icones-sociais .twitter a{
+	background-image: url("twitter.png");
+}
+
+.icones-sociais .linkedin a{
+	background-image: url(linkedin.png);
 }
