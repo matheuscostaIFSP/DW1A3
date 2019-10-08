@@ -92,14 +92,14 @@ nav {
 	text-indent: -99999px;
 }
 
-.icones-sociais .github a {
+.icones-sociais a.github {
 	background-image: url("Imagens/github.png");
 }
 
-.icones-sociais .twitter a{
+.icones-sociais a.twitter {
 	background-image: url("twitter.png");
 }
 
-.icones-sociais .linkedin a{
+.icones-sociais a.linkedin {
 	background-image: url(linkedin.png);
 }
