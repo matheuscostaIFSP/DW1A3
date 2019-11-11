@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=no">
+		<meta http-equiv="X-UA-Compatile" content="ie-edge">
+		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+		<title>Form</title>
+	</head>
+	<body>
+	<h1>Javascript</h1>
+	<form action="form-action.php" method="post">
+            <p>
+                <input type="checkbox" id="chk1" value="on">Check 1
+            </p>
+            <p>
+                <input type="checkbox" id="chk2" value="on">Check 2
+            </p>
+            <p>
+                <input type="checkbox" id="chk3" value="on">Selecionar todos
+            </p>
+            <p>
+                <input type="button" id="btnSubmit" value="Submit me!" />
+                <input type="button" id="btnLoad" value="Load!" />
+            </p>
+            <p>
+                Short Bio (up to 140 characters):
+            </p>
+            <input type="text" id="txtNome" placeholder="Type your message ...">
+            <p id="charleft">
+            </p>
+        </form>
+        <script type="text/javascript" src="checkboxes-v1.0.js"></script>
+        <script>
+            
+
+            document.getElementById("chk3").onclick = function () {
+                if (chk3.checked) {
+                chk2.checked = true;
+                chk1.checked = true;
+                }
+            }
+
+           var len = document.getElementById("txtNome").value.length;
+           
+           var lenleft = 140 - len;
+           document.getElementById("charleft").innerHTML = document.write(lenleft+" characters left");
+            
+
+        </script>
+	</body>	
+</html>
