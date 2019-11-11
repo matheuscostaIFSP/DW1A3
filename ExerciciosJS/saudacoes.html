@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=no">
+		<meta http-equiv="X-UA-Compatile" content="ie-edge">
+		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+		<title>Saudacoes</title>
+	</head>
+	<body>
+	<h1>Javascript</h1>
+	<h2>
+	<script>
+		var data = new Date();
+		var hora = data.getHours();
+		if (hora<12)
+			document.write("Bom dia");
+		else
+			if (hora>=12 && hora<18)
+				document.write("Boa tarde");
+			else
+				document.write("Boa Noite");
+	</script>
+	</h2>
+	<h3>
+	<script>
+				var altura = window.innerHeight;
+		var largura = window.innerWidth;
+		document.write("\nA altura é: "+altura);
+		document.write("\ne a largura é: "+largura+".");
+	</script>
+	</h3>
+	</body>	
+</html>
