@@ -27,8 +27,8 @@
             <p>
                 Short Bio (up to 140 characters):
             </p>
-            <input type="text" id="txtNome" placeholder="Type your message ...">
-            <p id="charleft">
+            <input type="text" id="txtNome" placeholder="Type your message ..." onkeyup="countchars();" onkeydown="countchars();" onmouseout="countchars();">
+            <p id="charleft" >
             </p>
         </form>
         <script type="text/javascript" src="checkboxes-v1.0.js"></script>
@@ -42,10 +42,18 @@
                 }
             }
 
-           var len = document.getElementById("txtNome").value.length;
+            function countchars(){
+            
+            var len = document.getElementById("txtNome").value.length;
+            var lenleft = 140 - len;
+            document.getElementById("charleft").textContent = lenleft+" characters left";
            
-           var lenleft = 140 - len;
-           document.getElementById("charleft").innerHTML = document.write(lenleft+" characters left");
+           }
+
+
+            
+           
+           
             
 
         </script>
