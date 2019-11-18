@@ -3,26 +3,29 @@
 <html lang="pt-BR">
 	<head>
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=no">
-		<meta http-equiv="X-UA-Compatile" content="ie-edge">
-		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" href="css/site.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        
 		<title>Form</title>
 	</head>
 	<body>
-	<h1>Javascript</h1>
-	<form action="form-action.php" method="post">
+    <h1>Javascript</h1>
+    <script src="form.js"></script>
+	<form>
             <p>
-                <input type="checkbox" id="chk1" value="on">Check 1
+                <input type="checkbox" id="chk1" name="foo" value="on">Check 1
             </p>
             <p>
-                <input type="checkbox" id="chk2" value="on">Check 2
+                <input type="checkbox" id="chk2" name="foo" value="on">Check 2
             </p>
             <p>
-                <input type="checkbox" id="chk3" value="on">Selecionar todos
+                <input type="checkbox" id="chk3" name="foo" value="on">Selecionar todos
             </p>
             <p>
-                <input type="button" id="btnSubmit" value="Submit me!" />
-                <input type="button" id="btnLoad" value="Load!" />
+                <input type="button" id="btnReset" value="Reset!" onclick="resetFunc()">
             </p>
             <p>
                 Short Bio (up to 140 characters):
@@ -31,31 +34,13 @@
             <p id="charleft" >
             </p>
         </form>
-        <script type="text/javascript" src="checkboxes-v1.0.js"></script>
         <script>
-            
-
             document.getElementById("chk3").onclick = function () {
-                if (chk3.checked) {
-                chk2.checked = true;
-                chk1.checked = true;
-                }
+            if (chk3.checked) {
+            chk2.checked = true;
+            chk1.checked = true;
             }
-
-            function countchars(){
-            
-            var len = document.getElementById("txtNome").value.length;
-            var lenleft = 140 - len;
-            document.getElementById("charleft").textContent = lenleft+" characters left";
-           
-           }
-
-
-            
-           
-           
-            
-
+        }
         </script>
 	</body>	
 </html>

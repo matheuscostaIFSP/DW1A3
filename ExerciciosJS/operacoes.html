@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" href="css/site.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        
+		<title>Operacoes</title>
+	</head>
+	<body>
+    <h1>Javascript</h1>
+    <script src="operacoes.js"></script>
+	<form>
+            <p>
+                Insira os valores
+            </p>
+            Valor A:<input type="text" id="vlrA" placeholder="Insira o valor">
+            Valor B:<input type="text" id="vlrB" placeholder="Insira o valor">
+            <p>
+                <input type="button" id="btnCalcular" value="calcular" onclick="calcular()">
+            </p>
+            <table>
+                <tr>
+                  <th>Operacao</th>
+                  <th>valor</th>
+                </tr>
+                <tr>
+                    <td id="opSoma"></td>
+                    <td id="resSoma"></td>
+                </tr>
+                <tr>
+                    <td id="opProd"></td>
+                    <td id="resProd"></td>
+                </tr>
+                <tr>
+                    <td id="opDiv"></td>
+                    <td id="resDiv"></td>
+                </tr>
+                <tr>
+                    <td id="opResto"></td>
+                    <td id="resResto"></td>
+                </tr>
+              </table> 
+              <script>
+                (function calcular(){
+                    var valorA = parseFloat.document.getElementById("vlrA").value;
+                    var valorB = parseFloat(document.getElementById("vlrb").value);
+                    
+                    document.querySelector('#opSoma').innerHTML = valorA + "+" + valorB;
+                    
+                })()
+                
+                document.addEventListener("DOMContentLoaded", function () {
+                 var proxRevs = document.querySelectorAll(".info-ultimaRevisao");
+                 verifica(proxRevs);
+                 });
+                
+        
+        </script>
+        </form>
+
+	</body>	
+</html>
